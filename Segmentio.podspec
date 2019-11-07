@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  spec.name           = "Segmentio"
+  spec.name           = "Segmentio-cop"
   spec.version        = "4.1"
   spec.swift_version  = "5.0"
 
