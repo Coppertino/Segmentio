@@ -316,7 +316,7 @@ class SegmentioCell: UICollectionViewCell {
         let rect = CGRect(
             x: contentView.bounds.width - 1,
             y: 0,
-            width: 1,
+            width: 0.4,
             height: contentViewWidth
         )
         verticalSeparatorView = UIView(frame: rect)
@@ -342,7 +342,7 @@ class SegmentioCell: UICollectionViewCell {
             toItem: nil,
             attribute: .notAnAttribute,
             multiplier: 1,
-            constant: 1
+            constant: 0.4
         )
         widthConstraint.isActive = true
         
@@ -400,7 +400,7 @@ class SegmentioCell: UICollectionViewCell {
         path.addLine(to: CGPoint(x: verticalSeparatorView.frame.width / 2, y: endY))
         
         verticalSeparatorLayer.path = path.cgPath
-        verticalSeparatorLayer.lineWidth = 1
+        verticalSeparatorLayer.lineWidth = 0.4
         verticalSeparatorLayer.strokeColor = verticalSeparatorOptions.color.cgColor
         verticalSeparatorLayer.fillColor = verticalSeparatorOptions.color.cgColor
         
