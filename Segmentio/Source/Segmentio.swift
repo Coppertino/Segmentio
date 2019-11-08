@@ -437,7 +437,7 @@ open class Segmentio: UIView {
                                     animated: Bool = false) {
         var endPointWithVerticalSeparator = endPoint
         let isLastItem = selectedSegmentioIndex + 1 == segmentioItems.count
-        endPointWithVerticalSeparator.x = endPoint.x - (isLastItem ? 0 : 1)
+        endPointWithVerticalSeparator.x = endPoint.x - (isLastItem ? 0 : 0.4)
         
         let shapeLayerPath = UIBezierPath()
         shapeLayerPath.move(to: startPoint)
