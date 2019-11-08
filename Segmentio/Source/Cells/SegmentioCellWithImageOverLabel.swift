@@ -45,7 +45,7 @@ class SegmentioCellWithImageOverLabel: SegmentioCell {
         NSLayoutConstraint.activate(segmentTitleLabelHorizontConstraint)
         
         let contentViewVerticalConstraints = NSLayoutConstraint.constraints(
-            withVisualFormat: "V:[imageContainerView]-[containerView(labelHeight)]",
+            withVisualFormat: "V:[imageContainerView]-(4)-[containerView(labelHeight)]",
             options: [],
             metrics: metrics,
             views: views)
@@ -60,7 +60,7 @@ class SegmentioCellWithImageOverLabel: SegmentioCell {
             toItem: contentView,
             attribute: .top,
             multiplier: 1,
-            constant: padding
+            constant: 12
         )
         topConstraint?.isActive = true
         
@@ -71,7 +71,7 @@ class SegmentioCellWithImageOverLabel: SegmentioCell {
             toItem: containerView,
             attribute: .bottom,
             multiplier: 1,
-            constant: padding
+            constant: 6
         )
         bottomConstraint?.isActive = true
     }
