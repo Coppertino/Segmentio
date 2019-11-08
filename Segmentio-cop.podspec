@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name           = "Segmentio-cop"
-  spec.version        = "4.1"
+  spec.version        = "4.1.1"
   spec.swift_version  = "5.0"
 
   spec.homepage = "https://github.com/Coppertino/Segmentio.git"
@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.license = { :type => "MIT", :file => "LICENSE" }
   
   spec.ios.deployment_target = '8.0'
-  spec.source       = { :git => "https://github.com/Coppertino/Segmentio.git", :branch => "master" }
+  spec.source       = { :git => "https://github.com/Coppertino/Segmentio.git", :tag => spec.version }
 
   spec.source_files = 'Segmentio/Source/**/*.swift'
   spec.resources = 'Segmentio/Source/Badge/Views/*.xib'
